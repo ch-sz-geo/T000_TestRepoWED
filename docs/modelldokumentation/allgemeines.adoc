@@ -1,10 +1,10 @@
 == Allgemeines
 === Ziel und Zweck
-Dieses Dokument beschreibt den Geobasisdatensatz
+Dieses Dokument ist ein Test Repository
  
-* *__<Name des Datensatzes>__.*
+* *TestRepoWED.*
 
-__<weitere Beschreibungen>__
+__und beinhaltet keine Daten__
 
 Der Geobasisdatensatz ist Bestandteil des ÖREB-Katasters.
 
