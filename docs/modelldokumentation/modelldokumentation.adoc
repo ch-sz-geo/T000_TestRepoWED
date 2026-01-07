@@ -6,7 +6,7 @@ ifdef::backend-pdf[]
 {subtitle}
 :title-logo-image: image: https://ch-sz-geo.github.io/T000_TestRepoWED/themes/header_sz_pdf.png[top=-10%,align=center,width=fill]
 :pdf-theme: https://ch-sz-geo.github.io/T000_TestRepoWED/themes/pdfTheme.yml
-:pdf-fontsdir: https://github.com/ch-sz-geo/T000_TestRepoWED/tree/main/fonts/
+:pdf-fontsdir: fonts/
 endif::[]
 ifndef::env-github[:toc: left]
 :toc-title: Inhalt
