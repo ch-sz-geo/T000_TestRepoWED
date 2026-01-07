@@ -28,7 +28,7 @@ page:
   margin: [3.5cm, 1.4cm, 2.4cm, 2.5cm]
   
 title-page:
-  background-image: image::https://ch-sz-geo.github.io/T000_TestDefaultStylesWED/themes/header_sz_pdf.png[top=-10%,align=center,width=fill]
+  background-image: image::https://ch-sz-geo.github.io/T000_TestDefaultStylesWED/themes/header_sz_pdf.png[possition=top center]
 
 title-page-title:
   font-family: Trade Gothic
