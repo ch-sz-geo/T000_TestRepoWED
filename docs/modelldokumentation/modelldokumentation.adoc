@@ -4,9 +4,9 @@
 ifdef::backend-pdf[]
 = {title}
 {subtitle}
-:title-logo-image: image:../../themes/header_sz_pdf.png[top=-10%,align=center,width=fill]
-:pdf-theme: ../../themes/pdfTheme.yml
-:pdf-fontsdir: fonts/
+:title-logo-image: image: https://ch-sz-geo.github.io/T000_TestRepoWED/themes/header_sz_pdf.png[top=-10%,align=center,width=fill]
+:pdf-theme: https://ch-sz-geo.github.io/T000_TestRepoWED/themes/pdfTheme.yml
+:pdf-fontsdir: https://github.com/ch-sz-geo/T000_TestRepoWED/tree/main/fonts/
 endif::[]
 ifndef::env-github[:toc: left]
 :toc-title: Inhalt
@@ -21,7 +21,6 @@ ifndef::env-github[:toc: left]
 :sectlinks:
 :sectanchors:
 // :includedir: docs
-:stylesheet: ../../themes/stylesheet.css
 :doctype: book
 :!chapter-signifier:
 
