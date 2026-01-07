@@ -1,14 +1,6 @@
 extends: base
 
-font:
-  catalog:
-    merge: false
-    Trade Gothic:
-      normal: tradegothic-normal.ttf
-      bold: tradegothic-bold.ttf
-      light: tradegothic-light.ttf
-      italic: tradegothic-Italic.ttf
-      bold_italic: tradegothic-bold_italic.ttf
+
 
 base:
   font-color: #000000
