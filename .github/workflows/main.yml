@@ -52,6 +52,7 @@ jobs:
         run: gem install asciidoctor-pdf
       - name: create pdfs
         run: |
+          mkdir -p /tmp/fonts
           curl -fsSL https://ch-sz-geo.github.io/A000_defaultDesigne/themes/pdfTheme.yml -o /tmp/pdfTheme.yml
           curl -fsSL https://github.com/ch-sz-geo/A000_defaultDesigne/raw/refs/heads/main/fonts/tradegothic-Italic.ttf -o /tmp/fonts/tradegothic-Italic.ttf
           curl -fsSL https://github.com/ch-sz-geo/A000_defaultDesigne/raw/refs/heads/main/fonts/tradegothic-bold.ttf -o /tmp/fonts/tradegothic-bold.ttf
