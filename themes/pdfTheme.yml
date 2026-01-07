@@ -36,7 +36,7 @@ header:
   start-at: toc
   height: 4cm
   image-vertical-align: 0.9cm
-  background-image: image:../docs/img/logo_kt_sz_rgb.jpg[position=right top,fit=none,pdfwidth=4.5cm]
+  background-image: image::https://ch-sz-geo.github.io/T000_TestDefaultStylesWED/docs/img/logo_kt_sz_rgb.jpg[position=right top,fit=none,pdfwidth=4.5cm]
   border-width: 0cm
   margin: [0.9cm 0cm 0.9cm 0cm]
 
