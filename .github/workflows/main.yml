@@ -52,8 +52,9 @@ jobs:
         run: gem install asciidoctor-pdf
       - name: create pdfs
         run: |
-          asciidoctor-pdf -a allow-uri-read -a imagesdir= --theme https://ch-sz-geo.github.io/A000_defaultDesigne/themes/pdfTheme.yml -o ./docs/modelldokumentation.pdf ./docs/modelldokumentation/modelldokumentation.adoc
-          asciidoctor-pdf -a allow-uri-read -a imagesdir= --theme https://ch-sz-geo.github.io/A000_defaultDesigne/themes/pdfTheme.yml -o ./docs/erfassungsrichtlinien.pdf ./docs/erfassungsrichtlinien/erfassungsrichtlinien.adoc
+          curl -fsSL https://ch-sz-geo.github.io/A000_defaultDesigne/themes/pdfTheme.yml -o /tmp/pdfTheme.yml
+          asciidoctor-pdf -a allow-uri-read -a imagesdir= --theme /tmp/pdfTheme.yml -o ./docs/modelldokumentation.pdf ./docs/modelldokumentation/modelldokumentation.adoc
+          asciidoctor-pdf -a allow-uri-read -a imagesdir= --theme /tmp/pdfTheme.yml -o ./docs/erfassungsrichtlinien.pdf ./docs/erfassungsrichtlinien/erfassungsrichtlinien.adoc
       - name: Commit HTML
         run: |
           git config --global user.email "actions@github.com"
