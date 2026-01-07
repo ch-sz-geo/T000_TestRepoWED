@@ -52,13 +52,13 @@ jobs:
         run: gem install asciidoctor-pdf
       - name: create pdfs
         run: |
-          mkdir -p /tmp/fonts
+
           curl -fsSL https://ch-sz-geo.github.io/A000_defaultDesigne/themes/pdfTheme.yml -o /tmp/pdfTheme.yml
-          curl -fsSL https://github.com/ch-sz-geo/A000_defaultDesigne/raw/refs/heads/main/fonts/tradegothic-Italic.ttf -o /tmp/fonts/tradegothic-Italic.ttf
-          curl -fsSL https://github.com/ch-sz-geo/A000_defaultDesigne/raw/refs/heads/main/fonts/tradegothic-bold.ttf -o /tmp/fonts/tradegothic-bold.ttf
-          curl -fsSL https://github.com/ch-sz-geo/A000_defaultDesigne/raw/refs/heads/main/fonts/tradegothic-bold_italic.ttf -o /tmp/fonts/tradegothic-bold_italic.ttf
-          curl -fsSL https://github.com/ch-sz-geo/A000_defaultDesigne/raw/refs/heads/main/fonts/tradegothic-light.ttf -o /tmp/fonts/tradegothic-light.ttf
-          curl -fsSL https://github.com/ch-sz-geo/A000_defaultDesigne/raw/refs/heads/main/fonts/tradegothic-normal.ttf -o /tmp/fonts/tradegothic-normal.ttf
+          curl -fsSL https://github.com/ch-sz-geo/A000_defaultDesigne/raw/refs/heads/main/fonts/tradegothic-Italic.ttf -o /tmp/tradegothic-Italic.ttf
+          curl -fsSL https://github.com/ch-sz-geo/A000_defaultDesigne/raw/refs/heads/main/fonts/tradegothic-bold.ttf -o /tmp/tradegothic-bold.ttf
+          curl -fsSL https://github.com/ch-sz-geo/A000_defaultDesigne/raw/refs/heads/main/fonts/tradegothic-bold_italic.ttf -o /tmp/tradegothic-bold_italic.ttf
+          curl -fsSL https://github.com/ch-sz-geo/A000_defaultDesigne/raw/refs/heads/main/fonts/tradegothic-light.ttf -o /tmp/tradegothic-light.ttf
+          curl -fsSL https://github.com/ch-sz-geo/A000_defaultDesigne/raw/refs/heads/main/fonts/tradegothic-normal.ttf -o /tmp/tradegothic-normal.ttf
           asciidoctor-pdf -a allow-uri-read -a imagesdir= --theme /tmp/pdfTheme.yml -o ./docs/modelldokumentation.pdf ./docs/modelldokumentation/modelldokumentation.adoc
           asciidoctor-pdf -a allow-uri-read -a imagesdir= --theme /tmp/pdfTheme.yml -o ./docs/erfassungsrichtlinien.pdf ./docs/erfassungsrichtlinien/erfassungsrichtlinien.adoc
       - name: Commit HTML
