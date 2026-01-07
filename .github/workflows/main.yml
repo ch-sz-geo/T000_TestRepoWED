@@ -53,7 +53,6 @@ jobs:
       - name: create pdfs
         run: |
           curl -fsSL https://ch-sz-geo.github.io/A000_defaultDesigne/themes/pdfTheme.yml -o /tmp/pdfTheme.yml
-          curl -fsSL 
           asciidoctor-pdf -a allow-uri-read -a imagesdir= -o ./docs/modelldokumentation.pdf ./docs/modelldokumentation/modelldokumentation.adoc
           asciidoctor-pdf -a allow-uri-read -a imagesdir= -o ./docs/erfassungsrichtlinien.pdf ./docs/erfassungsrichtlinien/erfassungsrichtlinien.adoc
       - name: Commit HTML
