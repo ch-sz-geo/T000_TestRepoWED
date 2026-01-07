@@ -4,7 +4,7 @@
 ifdef::backend-pdf[]
 = {title}
 {subtitle}
-:title-logo-image: image:../../themes/header_sz_pdf.png[top=-10%,align=center,width=fill]
+:title-logo-image: image:https://ch-sz-geo.github.io/T000_TestDefaultStylesWED/themes/header_sz_pdf.png
 :pdf-theme: https://ch-sz-geo.github.io/T000_TestDefaultStylesWED/themes/pdfTheme.yml
 :pdf-fontsdir: fonts/
 endif::[]
