@@ -52,7 +52,7 @@ jobs:
         run: gem install asciidoctor-pdf
       - name: create pdfs
         run: |
-          asciidoctor-pdf  -a allow-uri-read -a imagesdir=  --theme ./themes/pdfTheme.yml -o ./docs/modelldokumentation.pdf ./docs/modelldokumentation/modelldokumentation.adoc
+          asciidoctor-pdf  -a allow-uri-read -a imagesdir= --theme ./themes/pdfTheme.yml -o ./docs/modelldokumentation.pdf ./docs/modelldokumentation/modelldokumentation.adoc
           asciidoctor-pdf --theme ./themes/pdfTheme.yml -o ./docs/erfassungsrichtlinien.pdf ./docs/erfassungsrichtlinien/erfassungsrichtlinien.adoc
       - name: Commit HTML
         run: |
