@@ -4,9 +4,7 @@
 ifdef::backend-pdf[]
 = {title}
 {subtitle}
-:title-logo-image: image:../../themes/header_sz_pdf.PNG[top=-10%,align=center,width=fill]
-:pdf-theme: ../../themes/pdf-theme.yml
-:pdf-fontsdir: fonts/
+:pdf-theme: https://ch-sz-geo.github.io/A000_defaultDesigne/themes/pdfTheme.yml
 endif::[]
 ifndef::env-github[:toc: left]
 :toc-title: Inhalt
@@ -21,7 +19,6 @@ ifndef::env-github[:toc: left]
 :sectlinks:
 :sectanchors:
 // :includedir: docs
-:stylesheet: ../../themes/stylesheet.css
 :doctype: book
 :!chapter-signifier:
 
@@ -30,7 +27,7 @@ ifndef::env-github[:toc: left]
 ifndef::env-github,backend-pdf[]
 [.img-logo]
 //image:{includedir}/img/logo_kt_sz_rgb.jpg[]
-image:../../themes/logo_kt_sz_rgb.jpg[]
+//image:../../themes/logo_kt_sz_rgb.jpg[]
 
 = {title}
 [.subtitle]#{subtitle}# +
