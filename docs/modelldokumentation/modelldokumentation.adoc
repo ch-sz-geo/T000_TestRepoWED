@@ -4,7 +4,6 @@
 ifdef::backend-pdf[]
 = {title}
 {subtitle}
-:title-logo-image: image:../../themes/header_sz_pdf.png[top=-10%,align=center,width=fill]
 :pdf-theme: https://ch-sz-geo.github.io/T000_TestDefaultStylesWED/themes/pdfTheme.yml
 endif::[]
 ifndef::env-github[:toc: left]
@@ -27,7 +26,8 @@ ifndef::env-github[:toc: left]
 
 ifndef::env-github[]
 [.img-logo]
-image: https://ch-sz-geo.github.io/A000_defaultDesigne/themes/logo_kt_sz_rgb.jpg
+:myimage: https://ch-sz-geo.github.io/A000_defaultDesigne/themes/logo_kt_sz_rgb.jpg
+image::{myimage}[my alt text, role="my css styling", link="{myimage}"]
 
 = {title}
 [.subtitle]#{subtitle}# +
