@@ -27,7 +27,7 @@ ifndef::env-github[:toc: left]
 ifndef::env-github[]
 [.img-logo]
 :myImage: https://ch-sz-geo.github.io/A000_defaultDesigne/themes/logo_kt_sz_rgb.jpg
-image::{myImage}[my alt text, role="my css styling", link="{https://ch-sz-geo.github.io/T001_TestRepoWED/docs/modelldokumentation.html}"]
+image::{myImage}[my alt text, role="my css styling", link="{}"]
 
 = {title}
 [.subtitle]#{subtitle}# +
